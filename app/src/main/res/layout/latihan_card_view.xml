@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/wisata"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/ural"
+                android:scaleType="centerCrop"
+                />
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mountain Ural"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_below="@+id/wisata"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/paporit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/wisata"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/baseline_favorite_24"
+                android:backgroundTint="@color/red"
+                />
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lokasi"
+                android:text="@string/rusia"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+            <ImageView
+                android:id="@+id/kasi"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_location_on_24"
+                android:layout_below="@+id/deskripsi"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                />
+            <TextView
+                android:id="@+id/love"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Russian Union"
+                android:layout_toEndOf="@+id/kasi"
+                android:layout_marginStart="2dp"
+                android:layout_below="@+id/deskripsi"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/ceke"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/baseline_price_check_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@+id/deskripsi"
+                android:layout_toEndOf="@+id/love"
+                />
+            <TextView
+                android:id="@+id/oaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100/package"
+                android:layout_toEndOf="@+id/ceke"
+                android:layout_marginStart="2dp"
+                android:layout_below="@+id/deskripsi"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                /> 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan trip now"
+                android:layout_alignParentBottom="true"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

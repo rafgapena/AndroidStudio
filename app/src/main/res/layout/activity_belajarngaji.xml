@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarngajiActivity">
+    <ImageView
+        android:id="@+id/template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/gambarngaji"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/orangngaji"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/mengajak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Doa dan  \nmengaji \naplikasi"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"/>
+
+    <TextView
+        android:id="@+id/pljs"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Pilihan doa dan zikir"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_below="@id/template"
+        android:textColor="@color/ckt"/>
+    <Button
+        android:id="@+id/buttonngaji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/template"
+        android:layout_toRightOf="@id/pljs"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#63E6822B"
+        android:text="selanjutnya"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/black"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_below="@id/pljs">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/doanya"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

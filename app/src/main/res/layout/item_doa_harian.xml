@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/doajudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/bgntidur"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/doadoa" />
+
+            <TextView
+                android:id="@+id/jdltidur"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:maxLines="2"
+                android:text="Doa Bangun Tidur"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            <ImageButton
+                android:id="@+id/penanda"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/baseline_chevron_right_24"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C1C0C0"/>
+        <RelativeLayout
+            android:id="@+id/isidoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/isidoaarabnya"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:maxLines="10"
+                android:textStyle="bold"
+                android:text="@string/arab"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/isidoalatin"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLines="10"
+                android:textStyle="bold"
+                android:text="@string/latin"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/isidoaarabnya"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
